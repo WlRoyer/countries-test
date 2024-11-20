@@ -42,7 +42,6 @@ export default function CountryPage() {
 
         // eslint-disable-next-line
       } catch (error: any) {
-        console.error(error);
         setError(
           error.response?.data?.message || "Failed to fetch country data."
         );

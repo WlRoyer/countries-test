@@ -1,4 +1,4 @@
-import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import { CountryMany, CountryPop, CountrySingle } from 'src/dtos/country';
 
@@ -37,7 +37,6 @@ export class CountriesService {
   }
 
   private async fetchCountryInfo(code: string) {
-    console.log(code);
     const response = await this.httpService.axiosRef.get(
       `${this.nagerBaseUrl}/CountryInfo/${code}`,
     );

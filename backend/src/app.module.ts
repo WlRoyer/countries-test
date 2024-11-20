@@ -8,7 +8,5 @@ import { CountriesModule } from './countries/countries.module';
     HttpModule,
     CountriesModule,
   ],
-  controllers: [],
-  providers: [],
 })
 export class AppModule {}

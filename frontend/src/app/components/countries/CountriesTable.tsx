@@ -22,7 +22,6 @@ export function CountriesTable() {
         const response = await axios.get(
           `${process.env.NEXT_PUBLIC_API_BASE_URL}/countries`
         );
-        console.log(response);
         setCountries(response.data);
       } catch (err) {
         setError("Failed to fetch countries: " + err);
